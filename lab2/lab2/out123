@@ -1,0 +1,463 @@
+make -C lib all
+make[1]: Entering directory '/home/squhuang/os23fall-stu/src/lab1/lib'
+riscv64-linux-gnu-gcc  -march=rv64imafd -mabi=lp64 -mcmodel=medany -fno-builtin -ffunction-sections -fdata-sections -nostartfiles -nostdlib -nostdinc -static -lgcc -Wl,--nmagic -Wl,--gc-sections -g  -I /home/squhuang/os23fall-stu/src/lab1/include -I /home/squhuang/os23fall-stu/src/lab1/arch/riscv/include -D PRIORITY -c printk.c
+riscv64-linux-gnu-gcc  -march=rv64imafd -mabi=lp64 -mcmodel=medany -fno-builtin -ffunction-sections -fdata-sections -nostartfiles -nostdlib -nostdinc -static -lgcc -Wl,--nmagic -Wl,--gc-sections -g  -I /home/squhuang/os23fall-stu/src/lab1/include -I /home/squhuang/os23fall-stu/src/lab1/arch/riscv/include -D PRIORITY -c rand.c
+riscv64-linux-gnu-gcc  -march=rv64imafd -mabi=lp64 -mcmodel=medany -fno-builtin -ffunction-sections -fdata-sections -nostartfiles -nostdlib -nostdinc -static -lgcc -Wl,--nmagic -Wl,--gc-sections -g  -I /home/squhuang/os23fall-stu/src/lab1/include -I /home/squhuang/os23fall-stu/src/lab1/arch/riscv/include -D PRIORITY -c string.c
+make[1]: Leaving directory '/home/squhuang/os23fall-stu/src/lab1/lib'
+make -C test all
+make[1]: Entering directory '/home/squhuang/os23fall-stu/src/lab1/test'
+riscv64-linux-gnu-gcc  -march=rv64imafd -mabi=lp64 -mcmodel=medany -fno-builtin -ffunction-sections -fdata-sections -nostartfiles -nostdlib -nostdinc -static -lgcc -Wl,--nmagic -Wl,--gc-sections -g  -I /home/squhuang/os23fall-stu/src/lab1/include -I /home/squhuang/os23fall-stu/src/lab1/arch/riscv/include -D PRIORITY -c schedule_null.c
+make[1]: Leaving directory '/home/squhuang/os23fall-stu/src/lab1/test'
+make -C init all
+make[1]: Entering directory '/home/squhuang/os23fall-stu/src/lab1/init'
+riscv64-linux-gnu-gcc -march=rv64imafd -mabi=lp64 -mcmodel=medany -fno-builtin -ffunction-sections -fdata-sections -nostartfiles -nostdlib -nostdinc -static -lgcc -Wl,--nmagic -Wl,--gc-sections -g  -I /home/squhuang/os23fall-stu/src/lab1/include -I /home/squhuang/os23fall-stu/src/lab1/arch/riscv/include -D PRIORITY -c main.c
+riscv64-linux-gnu-gcc -march=rv64imafd -mabi=lp64 -mcmodel=medany -fno-builtin -ffunction-sections -fdata-sections -nostartfiles -nostdlib -nostdinc -static -lgcc -Wl,--nmagic -Wl,--gc-sections -g  -I /home/squhuang/os23fall-stu/src/lab1/include -I /home/squhuang/os23fall-stu/src/lab1/arch/riscv/include -D PRIORITY -c test.c
+make[1]: Leaving directory '/home/squhuang/os23fall-stu/src/lab1/init'
+make -C arch/riscv all
+make[1]: Entering directory '/home/squhuang/os23fall-stu/src/lab1/arch/riscv'
+make -C kernel all
+make[2]: Entering directory '/home/squhuang/os23fall-stu/src/lab1/arch/riscv/kernel'
+riscv64-linux-gnu-gcc  -march=rv64imafd -mabi=lp64 -mcmodel=medany -fno-builtin -ffunction-sections -fdata-sections -nostartfiles -nostdlib -nostdinc -static -lgcc -Wl,--nmagic -Wl,--gc-sections -g  -I /home/squhuang/os23fall-stu/src/lab1/include -I /home/squhuang/os23fall-stu/src/lab1/arch/riscv/include -D PRIORITY -c entry.S
+riscv64-linux-gnu-gcc  -march=rv64imafd -mabi=lp64 -mcmodel=medany -fno-builtin -ffunction-sections -fdata-sections -nostartfiles -nostdlib -nostdinc -static -lgcc -Wl,--nmagic -Wl,--gc-sections -g  -I /home/squhuang/os23fall-stu/src/lab1/include -I /home/squhuang/os23fall-stu/src/lab1/arch/riscv/include -D PRIORITY -c head.S
+riscv64-linux-gnu-gcc  -march=rv64imafd -mabi=lp64 -mcmodel=medany -fno-builtin -ffunction-sections -fdata-sections -nostartfiles -nostdlib -nostdinc -static -lgcc -Wl,--nmagic -Wl,--gc-sections -g  -I /home/squhuang/os23fall-stu/src/lab1/include -I /home/squhuang/os23fall-stu/src/lab1/arch/riscv/include -D PRIORITY -c clock.c
+riscv64-linux-gnu-gcc  -march=rv64imafd -mabi=lp64 -mcmodel=medany -fno-builtin -ffunction-sections -fdata-sections -nostartfiles -nostdlib -nostdinc -static -lgcc -Wl,--nmagic -Wl,--gc-sections -g  -I /home/squhuang/os23fall-stu/src/lab1/include -I /home/squhuang/os23fall-stu/src/lab1/arch/riscv/include -D PRIORITY -c mm.c
+riscv64-linux-gnu-gcc  -march=rv64imafd -mabi=lp64 -mcmodel=medany -fno-builtin -ffunction-sections -fdata-sections -nostartfiles -nostdlib -nostdinc -static -lgcc -Wl,--nmagic -Wl,--gc-sections -g  -I /home/squhuang/os23fall-stu/src/lab1/include -I /home/squhuang/os23fall-stu/src/lab1/arch/riscv/include -D PRIORITY -c proc.c
+riscv64-linux-gnu-gcc  -march=rv64imafd -mabi=lp64 -mcmodel=medany -fno-builtin -ffunction-sections -fdata-sections -nostartfiles -nostdlib -nostdinc -static -lgcc -Wl,--nmagic -Wl,--gc-sections -g  -I /home/squhuang/os23fall-stu/src/lab1/include -I /home/squhuang/os23fall-stu/src/lab1/arch/riscv/include -D PRIORITY -c sbi.c
+riscv64-linux-gnu-gcc  -march=rv64imafd -mabi=lp64 -mcmodel=medany -fno-builtin -ffunction-sections -fdata-sections -nostartfiles -nostdlib -nostdinc -static -lgcc -Wl,--nmagic -Wl,--gc-sections -g  -I /home/squhuang/os23fall-stu/src/lab1/include -I /home/squhuang/os23fall-stu/src/lab1/arch/riscv/include -D PRIORITY -c trap.c
+make[2]: Leaving directory '/home/squhuang/os23fall-stu/src/lab1/arch/riscv/kernel'
+riscv64-linux-gnu-ld -T kernel/vmlinux.lds kernel/*.o ../../init/*.o ../../lib/*.o ../../test/*.o -o ../../vmlinux 
+riscv64-linux-gnu-objcopy -O binary ../../vmlinux ./boot/Image
+nm ../../vmlinux >  ../../System.map
+make[1]: Leaving directory '/home/squhuang/os23fall-stu/src/lab1/arch/riscv'
+
+Build Finished OK
+Launch the qemu ......
+
+OpenSBI v1.2
+   ____                    _____ ____ _____
+  / __ \                  / ____|  _ \_   _|
+ | |  | |_ __   ___ _ __ | (___ | |_) || |
+ | |  | | '_ \ / _ \ '_ \ \___ \|  _ < | |
+ | |__| | |_) |  __/ | | |____) | |_) || |_
+  \____/| .__/ \___|_| |_|_____/|____/_____|
+        | |
+        |_|
+
+Platform Name             : riscv-virtio,qemu
+Platform Features         : medeleg
+Platform HART Count       : 1
+Platform IPI Device       : aclint-mswi
+Platform Timer Device     : aclint-mtimer @ 10000000Hz
+Platform Console Device   : uart8250
+Platform HSM Device       : ---
+Platform PMU Device       : ---
+Platform Reboot Device    : sifive_test
+Platform Shutdown Device  : sifive_test
+Firmware Base             : 0x80000000
+Firmware Size             : 212 KB
+Runtime SBI Version       : 1.0
+
+Domain0 Name              : root
+Domain0 Boot HART         : 0
+Domain0 HARTs             : 0*
+Domain0 Region00          : 0x0000000002000000-0x000000000200ffff (I)
+Domain0 Region01          : 0x0000000080000000-0x000000008003ffff ()
+Domain0 Region02          : 0x0000000000000000-0xffffffffffffffff (R,W,X)
+Domain0 Next Address      : 0x0000000080200000
+Domain0 Next Arg1         : 0x0000000087e00000
+Domain0 Next Mode         : S-mode
+Domain0 SysReset          : yes
+
+Boot HART ID              : 0
+Boot HART Domain          : root
+Boot HART Priv Version    : v1.12
+Boot HART Base ISA        : rv64imafdch
+Boot HART ISA Extensions  : time,sstc
+Boot HART PMP Count       : 16
+Boot HART PMP Granularity : 4
+Boot HART PMP Address Bits: 54
+Boot HART MHPM Count      : 16
+Boot HART MIDELEG         : 0x0000000000001666
+Boot HART MEDELEG         : 0x0000000000f0b509
+...mm_init done!
+...proc_init done!
+2022 Hello RISC-V
+[S] Supervisor Mode Timer Interrupt
+F
+F[S] Supervisor Mode Timer Interrupt
+F
+FF[S] Supervisor Mode Timer Interrupt
+F
+FFF[S] Supervisor Mode Timer Interrupt
+F
+FFFF[S] Supervisor Mode Timer Interrupt
+F
+FFFFF[S] Supervisor Mode Timer Interrupt
+F
+FFFFFF[S] Supervisor Mode Timer Interrupt
+F
+FFFFFFF[S] Supervisor Mode Timer Interrupt
+F
+FFFFFFFF[S] Supervisor Mode Timer Interrupt
+F
+FFFFFFFFF[S] Supervisor Mode Timer Interrupt
+F
+FFFFFFFFFF[S] Supervisor Mode Timer Interrupt
+F
+FFFFFFFFFFF[S] Supervisor Mode Timer Interrupt
+F
+FFFFFFFFFFFF[S] Supervisor Mode Timer Interrupt
+K
+FFFFFFFFFFFFK[S] Supervisor Mode Timer Interrupt
+K
+FFFFFFFFFFFFKK[S] Supervisor Mode Timer Interrupt
+K
+FFFFFFFFFFFFKKK[S] Supervisor Mode Timer Interrupt
+K
+FFFFFFFFFFFFKKKK[S] Supervisor Mode Timer Interrupt
+K
+FFFFFFFFFFFFKKKKK[S] Supervisor Mode Timer Interrupt
+K
+FFFFFFFFFFFFKKKKKK[S] Supervisor Mode Timer Interrupt
+K
+FFFFFFFFFFFFKKKKKKK[S] Supervisor Mode Timer Interrupt
+K
+FFFFFFFFFFFFKKKKKKKK[S] Supervisor Mode Timer Interrupt
+K
+FFFFFFFFFFFFKKKKKKKKK[S] Supervisor Mode Timer Interrupt
+K
+FFFFFFFFFFFFKKKKKKKKKK[S] Supervisor Mode Timer Interrupt
+K
+FFFFFFFFFFFFKKKKKKKKKKK[S] Supervisor Mode Timer Interrupt
+G
+FFFFFFFFFFFFKKKKKKKKKKKG[S] Supervisor Mode Timer Interrupt
+G
+FFFFFFFFFFFFKKKKKKKKKKKGG[S] Supervisor Mode Timer Interrupt
+G
+FFFFFFFFFFFFKKKKKKKKKKKGGG[S] Supervisor Mode Timer Interrupt
+G
+FFFFFFFFFFFFKKKKKKKKKKKGGGG[S] Supervisor Mode Timer Interrupt
+G
+FFFFFFFFFFFFKKKKKKKKKKKGGGGG[S] Supervisor Mode Timer Interrupt
+G
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGG[S] Supervisor Mode Timer Interrupt
+G
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGG[S] Supervisor Mode Timer Interrupt
+G
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGG[S] Supervisor Mode Timer Interrupt
+G
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGG[S] Supervisor Mode Timer Interrupt
+G
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGG[S] Supervisor Mode Timer Interrupt
+C
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGC[S] Supervisor Mode Timer Interrupt
+C
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCC[S] Supervisor Mode Timer Interrupt
+C
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCC[S] Supervisor Mode Timer Interrupt
+C
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCC[S] Supervisor Mode Timer Interrupt
+C
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCC[S] Supervisor Mode Timer Interrupt
+C
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCC[S] Supervisor Mode Timer Interrupt
+C
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCC[S] Supervisor Mode Timer Interrupt
+C
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCC[S] Supervisor Mode Timer Interrupt
+C
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCC[S] Supervisor Mode Timer Interrupt
+D
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCD[S] Supervisor Mode Timer Interrupt
+D
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDD[S] Supervisor Mode Timer Interrupt
+D
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDD[S] Supervisor Mode Timer Interrupt
+D
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDD[S] Supervisor Mode Timer Interrupt
+D
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDD[S] Supervisor Mode Timer Interrupt
+D
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDD[S] Supervisor Mode Timer Interrupt
+D
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDD[S] Supervisor Mode Timer Interrupt
+D
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDD[S] Supervisor Mode Timer Interrupt
+J
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJ[S] Supervisor Mode Timer Interrupt
+J
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJ[S] Supervisor Mode Timer Interrupt
+J
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJ[S] Supervisor Mode Timer Interrupt
+J
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJ[S] Supervisor Mode Timer Interrupt
+J
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJ[S] Supervisor Mode Timer Interrupt
+J
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJ[S] Supervisor Mode Timer Interrupt
+J
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJ[S] Supervisor Mode Timer Interrupt
+P
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJP[S] Supervisor Mode Timer Interrupt
+P
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPP[S] Supervisor Mode Timer Interrupt
+P
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPP[S] Supervisor Mode Timer Interrupt
+P
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPP[S] Supervisor Mode Timer Interrupt
+P
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPP[S] Supervisor Mode Timer Interrupt
+P
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPP[S] Supervisor Mode Timer Interrupt
+E
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPE[S] Supervisor Mode Timer Interrupt
+E
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEE[S] Supervisor Mode Timer Interrupt
+E
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEE[S] Supervisor Mode Timer Interrupt
+E
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEE[S] Supervisor Mode Timer Interrupt
+E
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEE[S] Supervisor Mode Timer Interrupt
+M
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEM[S] Supervisor Mode Timer Interrupt
+M
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMM[S] Supervisor Mode Timer Interrupt
+M
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMM[S] Supervisor Mode Timer Interrupt
+M
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMM[S] Supervisor Mode Timer Interrupt
+B
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMB[S] Supervisor Mode Timer Interrupt
+B
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMBB[S] Supervisor Mode Timer Interrupt
+B
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMBBB[S] Supervisor Mode Timer Interrupt
+B
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMBBBB[S] Supervisor Mode Timer Interrupt
+N
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMBBBBN[S] Supervisor Mode Timer Interrupt
+N
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMBBBBNN[S] Supervisor Mode Timer Interrupt
+N
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMBBBBNNN[S] Supervisor Mode Timer Interrupt
+L
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMBBBBNNNL[S] Supervisor Mode Timer Interrupt
+L
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMBBBBNNNLL[S] Supervisor Mode Timer Interrupt
+L
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMBBBBNNNLLL[S] Supervisor Mode Timer Interrupt
+O
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMBBBBNNNLLLO[S] Supervisor Mode Timer Interrupt
+O
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMBBBBNNNLLLOO[S] Supervisor Mode Timer Interrupt
+H
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMBBBBNNNLLLOOH[S] Supervisor Mode Timer Interrupt
+H
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMBBBBNNNLLLOOHH[S] Supervisor Mode Timer Interrupt
+I
+FFFFFFFFFFFFKKKKKKKKKKKGGGGGGGGGGCCCCCCCCCDDDDDDDDJJJJJJJPPPPPPEEEEEMMMMBBBBNNNLLLOOHHI
+NR_TASKS =  16, PRIORITY test passed!
+
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+[S] Supervisor Mode Timer Interrupt
+QEMU: Terminated
+
